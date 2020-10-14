@@ -1,5 +1,3 @@
 # LINE SDK for Laravel sample project
 
-WIP
-
-https://line.kawax.biz/
+https://github.com/kawax/laravel-line-sdk
