@@ -4,7 +4,6 @@ namespace App\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Revolution\Line\Notifications\LineNotifyChannel;
 use Revolution\Line\Notifications\LineNotifyMessage;
@@ -13,6 +12,9 @@ class LineNotifyTest extends Notification
 {
     use Queueable;
 
+    /**
+     * @var string
+     */
     protected $message;
 
     /**
@@ -42,19 +44,7 @@ class LineNotifyTest extends Notification
 
     public function toLineNotify($notifiable)
     {
-        return LineNotifyMessage::create($this->message);
-    }
-
-    /**
-     * Get the array representation of the notification.
-     *
-     * @param  mixed  $notifiable
-     * @return array
-     */
-    public function toArray($notifiable)
-    {
-        return [
-            //
-        ];
+        return LineNotifyMessage::create($this->message)
+            ->withSticker(11537, 52002734);
     }
 }
