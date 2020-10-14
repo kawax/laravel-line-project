@@ -6,7 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 
-class SocialiteController extends Controller
+class LoginSocialiteController extends Controller
 {
     public function login()
     {

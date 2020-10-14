@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\SocialiteController;
+use App\Http\Controllers\NotifySocialiteController;
+use App\Http\Controllers\LoginSocialiteController;
+use App\Notifications\LineNotifyTest;
 use Illuminate\Support\Facades\Route;
 use Revolution\Line\Facades\Bot;
 
@@ -20,13 +22,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('login', [SocialiteController::class, 'login'])->name('login');
-Route::get('callback', [SocialiteController::class, 'callback']);
-Route::post('logout', [SocialiteController::class, 'logout'])->name('logout');
+Route::get('login', [LoginSocialiteController::class, 'login'])->name('login');
+Route::get('callback', [LoginSocialiteController::class, 'callback']);
+Route::post('logout', [LoginSocialiteController::class, 'logout'])->name('logout');
+
 
 Route::get('/home', HomeController::class)->name('home');
 
 Route::get('info', function () {
     //dump(Bot::info());
     dump(Bot::verifyWebhook());
+});
+
+
+Route::middleware('auth')->group(function () {
+    Route::get('notify/login', [NotifySocialiteController::class, 'login']);
+    Route::get('notify/callback', [NotifySocialiteController::class, 'callback']);
+
+    Route::get('notify', function () {
+        auth()->user()->notify(new LineNotifyTest('test'));
+    });
 });

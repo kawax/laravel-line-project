@@ -22,6 +22,7 @@ class User extends Authenticatable
         'avatar',
         'access_token',
         'refresh_token',
+        'notify_token',
     ];
 
     /**
@@ -42,4 +43,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * @param  \Illuminate\Notifications\Notification  $notification
+     * @return string
+     */
+    public function routeNotificationForLineNotify($notification)
+    {
+        return $this->notify_token;
+    }
 }

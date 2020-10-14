@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->text('access_token');
             $table->string('refresh_token');
             $table->string('avatar')->nullable();
+            $table->string('notify_token')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
