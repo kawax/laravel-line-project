@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 
-class NotifySocialiteController extends Controller
+class NotifyController extends Controller
 {
     public function login()
     {
