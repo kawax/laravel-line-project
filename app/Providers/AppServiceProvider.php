@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\ServiceProvider;
+use Revolution\Line\Facades\Bot;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Bot::macro('verifyWebhook', function () {
+            return Http::line()->post('/v2/bot/channel/webhook/test', [
+                'endpoint' => ''
+            ])->json();
+        });
     }
 }
