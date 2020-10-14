@@ -27,7 +27,7 @@ class TextMessageListener
      */
     public function handle(TextMessage $event)
     {
-        $response = Bot::replyText($event->getReplyToken(), $event->getText());
+        $response = Bot::replyText($event->getReplyToken(), $event->getText(), $event->getText());
 
         if (! $response->isSucceeded()) {
             logger()->error(static::class.$response->getHTTPStatus(), $response->getJSONDecodedBody());
