@@ -44,7 +44,6 @@ class LineNotifyTest extends Notification
 
     public function toLineNotify($notifiable)
     {
-        return LineNotifyMessage::create($this->message)
-            ->withSticker(11537, 52002734);
+        return LineNotifyMessage::create($this->message);
     }
 }
