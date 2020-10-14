@@ -1433,16 +1433,16 @@
         },
         {
             "name": "linecorp/line-bot-sdk",
-            "version": "5.0.0",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/line/line-bot-sdk-php.git",
-                "reference": "a1f5c4ed2d865a54eebf6e0578a0b5ddc35fe8ee"
+                "reference": "7b598bc3a031ce93c9d61e1e448fe10cc4a50317"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/a1f5c4ed2d865a54eebf6e0578a0b5ddc35fe8ee",
-                "reference": "a1f5c4ed2d865a54eebf6e0578a0b5ddc35fe8ee",
+                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/7b598bc3a031ce93c9d61e1e448fe10cc4a50317",
+                "reference": "7b598bc3a031ce93c9d61e1e448fe10cc4a50317",
                 "shasum": ""
             },
             "require": {
@@ -1453,6 +1453,7 @@
             },
             "require-dev": {
                 "ext-posix": "*",
+                "orchestra/testbench": "*",
                 "phpmd/phpmd": "~2.9",
                 "phpunit/phpunit": "^4.8.36||^5||^6||^7",
                 "squizlabs/php_codesniffer": "~3.5"
@@ -1462,6 +1463,16 @@
                 "roave/better-reflection": "Required by apigen/apigen:dev-master"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LINE\\Laravel\\LINEBotServiceProvider"
+                    ],
+                    "aliases": {
+                        "LINEBot": "LINE\\Laravel\\Facade\\LINEBot"
+                    }
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "LINE\\": "src/"
@@ -1500,7 +1511,7 @@
                 "line",
                 "sdk"
             ],
-            "time": "2020-10-01T07:36:12+00:00"
+            "time": "2020-10-14T08:52:47+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2468,12 +2479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-line-sdk.git",
-                "reference": "7c472bc94c3bab73c6969998e31daa7bd05cdcfa"
+                "reference": "770846e9d1250b4f0c151ec38ff394d3a5676948"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/7c472bc94c3bab73c6969998e31daa7bd05cdcfa",
-                "reference": "7c472bc94c3bab73c6969998e31daa7bd05cdcfa",
+                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/770846e9d1250b4f0c151ec38ff394d3a5676948",
+                "reference": "770846e9d1250b4f0c151ec38ff394d3a5676948",
                 "shasum": ""
             },
             "require": {
@@ -2516,7 +2527,7 @@
                 "line",
                 "sdk"
             ],
-            "time": "2020-10-14T07:22:30+00:00"
+            "time": "2020-10-14T08:51:37+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -5921,16 +5932,16 @@
         },
         {
             "name": "facade/ignition",
-            "version": "2.3.8",
+            "version": "2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "e8fed9c382cd1d02b5606688576a35619afdf82c"
+                "reference": "9fc6c3d3de5271a1b94cff19dce2c9295abf0ffa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/e8fed9c382cd1d02b5606688576a35619afdf82c",
-                "reference": "e8fed9c382cd1d02b5606688576a35619afdf82c",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/9fc6c3d3de5271a1b94cff19dce2c9295abf0ffa",
+                "reference": "9fc6c3d3de5271a1b94cff19dce2c9295abf0ffa",
                 "shasum": ""
             },
             "require": {
@@ -5989,7 +6000,7 @@
                 "laravel",
                 "page"
             ],
-            "time": "2020-10-01T23:01:14+00:00"
+            "time": "2020-10-14T08:59:59+00:00"
         },
         {
             "name": "facade/ignition-contracts",
