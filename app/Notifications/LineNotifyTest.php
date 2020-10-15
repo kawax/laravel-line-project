@@ -42,6 +42,10 @@ class LineNotifyTest extends Notification
         ];
     }
 
+    /**
+     * @param  mixed  $notifiable
+     * @return LineNotifyMessage
+     */
     public function toLineNotify($notifiable)
     {
         return LineNotifyMessage::create($this->message);
