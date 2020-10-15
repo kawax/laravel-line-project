@@ -5,7 +5,7 @@ namespace App\Listeners\Message;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use LINE\LINEBot\Event\MessageEvent\TextMessage;
-use Revolution\Line\Facades\Bot;
+use Revolution\Line\Messaging\Bot;
 use Illuminate\Support\Facades\Notification;
 use App\Notifications\LineNotifyTest;
 
@@ -29,12 +29,13 @@ class TextMessageListener
      */
     public function handle(TextMessage $event)
     {
-        $response = Bot::replyText($event->getReplyToken(), $event->getText());
+        $response = Bot::reply($event->getReplyToken())
+            ->text(static::class, $event->getText());
 
         Notification::route('line-notify', config('line.notify.personal_access_token'))
             ->notify(new LineNotifyTest($event->getText()));
 
-        if (! $response->isSucceeded()) {
+        if (!$response->isSucceeded()) {
             logger()->error(static::class.$response->getHTTPStatus(), $response->getJSONDecodedBody());
         }
     }
