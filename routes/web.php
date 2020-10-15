@@ -35,7 +35,6 @@ Route::get('info', function () {
     dump(Bot::verifyWebhook());
 });
 
-
 Route::middleware('auth')->group(function () {
     Route::get('notify/login', [NotifyController::class, 'login']);
     Route::get('notify/callback', [NotifyController::class, 'callback']);
