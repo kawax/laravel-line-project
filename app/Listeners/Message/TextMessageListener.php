@@ -30,6 +30,7 @@ class TextMessageListener
     public function handle(TextMessage $event)
     {
         $response = Bot::reply($event->getReplyToken())
+            ->withSender(config('app.name'))
             ->text(static::class, $event->getText());
 
         Notification::route('line-notify', config('line.notify.personal_access_token'))
