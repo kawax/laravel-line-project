@@ -29,12 +29,15 @@ class TextMessageListener
      */
     public function handle(TextMessage $event)
     {
-        $response = Bot::reply($event->getReplyToken())
+        $token = $event->getReplyToken();
+        $text = $event->getText();
+
+        $response = Bot::reply($token)
             ->withSender(config('app.name'))
-            ->text(static::class, $event->getText());
+            ->text(class_basename(static::class), $text);
 
         Notification::route('line-notify', config('line.notify.personal_access_token'))
-            ->notify(new LineNotifyTest($event->getText()));
+            ->notify(new LineNotifyTest($text));
 
         if (!$response->isSucceeded()) {
             logger()->error(static::class.$response->getHTTPStatus(), $response->getJSONDecodedBody());
