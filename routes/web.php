@@ -6,6 +6,7 @@ use App\Http\Controllers\NotifyController;
 use App\Notifications\LineNotifyTest;
 use Illuminate\Support\Facades\Route;
 use Revolution\Line\Facades\Bot;
+use Revolution\Line\Facades\LineNotify;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +41,8 @@ Route::middleware('auth')->group(function () {
     Route::get('notify/callback', [NotifyController::class, 'callback']);
 
     Route::get('notify', function () {
-        auth()->user()->notify(new LineNotifyTest('test'));
+        $status = LineNotify::status(auth()->user()->notify_token);
+
+        auth()->user()->notify(new LineNotifyTest(json_encode($status)));
     });
 });
