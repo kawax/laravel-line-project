@@ -31,10 +31,11 @@ class TextMessageListener
     {
         $token = $event->getReplyToken();
         $text = $event->getText();
+        $emojis = $event->getEmojis();
 
         $response = Bot::reply($token)
             ->withSender(config('app.name'))
-            ->text(class_basename(static::class), $text);
+            ->text(class_basename(static::class), $text, json_encode($emojis));
 
         Notification::route('line-notify', config('line.notify.personal_access_token'))
             ->notify(new LineNotifyTest($text));
