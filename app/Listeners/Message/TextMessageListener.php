@@ -5,6 +5,7 @@ namespace App\Listeners\Message;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use LINE\LINEBot\Event\MessageEvent\TextMessage;
+use LINE\LINEBot\MessageBuilder\StickerMessageBuilder;
 use Revolution\Line\Messaging\Bot;
 use Illuminate\Support\Facades\Notification;
 use App\Notifications\LineNotifyTest;
@@ -34,7 +35,7 @@ class TextMessageListener
 
         $response = Bot::reply($token)
             ->withSender(config('app.name'))
-            ->text(class_basename(static::class), $text);
+            ->text(class_basename(static::class), new StickerMessageBuilder(1, 1), $text);
 
         Notification::route('line-notify', config('line.notify.personal_access_token'))
             ->notify(new LineNotifyTest($text));
