@@ -5,7 +5,6 @@ namespace App\Listeners\Message;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use LINE\LINEBot\Event\MessageEvent\TextMessage;
-use LINE\LINEBot\MessageBuilder\StickerMessageBuilder;
 use Revolution\Line\Messaging\Bot;
 use Illuminate\Support\Facades\Notification;
 use App\Notifications\LineNotifyTest;
