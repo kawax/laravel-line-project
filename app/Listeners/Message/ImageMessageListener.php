@@ -27,6 +27,9 @@ class ImageMessageListener
      */
     public function handle(ImageMessage $event)
     {
-        //
+        $token = $event->getReplyToken();
+
+        $response = Bot::reply($token)
+            ->text(class_basename(static::class));
     }
 }

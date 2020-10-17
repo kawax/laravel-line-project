@@ -27,6 +27,9 @@ class UnknownMessageListener
      */
     public function handle(UnknownMessage $event)
     {
-        //
+        $token = $event->getReplyToken();
+
+        $response = Bot::reply($token)
+            ->text(class_basename(static::class));
     }
 }

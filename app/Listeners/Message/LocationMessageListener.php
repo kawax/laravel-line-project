@@ -27,6 +27,9 @@ class LocationMessageListener
      */
     public function handle(LocationMessage $event)
     {
-        //
+        $token = $event->getReplyToken();
+
+        $response = Bot::reply($token)
+            ->text(class_basename(static::class));
     }
 }

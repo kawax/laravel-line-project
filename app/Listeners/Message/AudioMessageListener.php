@@ -27,6 +27,9 @@ class AudioMessageListener
      */
     public function handle(AudioMessage $event)
     {
-        //
+        $token = $event->getReplyToken();
+
+        $response = Bot::reply($token)
+            ->text(class_basename(static::class));
     }
 }
