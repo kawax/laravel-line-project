@@ -35,7 +35,7 @@ class TextMessageListener
 
         $response = Bot::reply($token)
             ->withSender(config('app.name'))
-            ->text(class_basename(static::class), new StickerMessageBuilder(1, 1), $text);
+            ->text(class_basename(static::class), $text);
 
         Notification::route('line-notify', config('line.notify.personal_access_token'))
             ->notify(new LineNotifyTest($text));
