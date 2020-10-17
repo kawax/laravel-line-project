@@ -40,7 +40,7 @@ Route::middleware('auth')->group(function () {
     Route::get('notify/callback', [NotifyController::class, 'callback']);
 
     Route::get('notify', function () {
-        $status = LineNotify::status(auth()->user()->notify_token);
+        $status = LineNotify::withToken(auth()->user()->notify_token)->status();
 
         auth()->user()->notify(new LineNotifyTest(json_encode($status)));
     });
