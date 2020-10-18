@@ -32,5 +32,6 @@ class StickerMessageListener
         $stickerId = $event->getStickerId();
 
         Bot::reply($token)->sticker($packageId, $stickerId);
+        Bot::reply($token)->text("packageId : $packageId / stickerId: $stickerId");
     }
 }
