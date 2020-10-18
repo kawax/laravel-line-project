@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9bedcad42eacc2f10350c5d90eacf02c",
+    "content-hash": "be8a4c68e8a73d576dac77e73c65729d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2475,16 +2475,16 @@
         },
         {
             "name": "revolution/laravel-line-sdk",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-line-sdk.git",
-                "reference": "66f50ff00437fc959a814c007956a07c0cdc6c93"
+                "reference": "427ccad25c33f5db0b2a0ab885acea31df2e79a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/66f50ff00437fc959a814c007956a07c0cdc6c93",
-                "reference": "66f50ff00437fc959a814c007956a07c0cdc6c93",
+                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/427ccad25c33f5db0b2a0ab885acea31df2e79a9",
+                "reference": "427ccad25c33f5db0b2a0ab885acea31df2e79a9",
                 "shasum": ""
             },
             "require": {
@@ -2527,7 +2527,7 @@
                 "line",
                 "sdk"
             ],
-            "time": "2020-10-17T23:15:50+00:00"
+            "time": "2020-10-18T01:04:50+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -8431,9 +8431,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "revolution/laravel-line-sdk": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
