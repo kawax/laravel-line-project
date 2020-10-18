@@ -3,10 +3,8 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\NotifyController;
-use App\Notifications\LineNotifyTest;
 use Illuminate\Support\Facades\Route;
 use Revolution\Line\Facades\Bot;
-use Revolution\Line\Facades\LineNotify;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,9 +39,6 @@ Route::middleware('auth')->group(function () {
 
     Route::get('notify/callback', [NotifyController::class, 'callback']);
 
-    Route::get('notify', function () {
-        auth()->user()->notify(new LineNotifyTest('OK'));
-
-        return back();
-    })->name('notify.send');
+    Route::get('notify', [NotifyController::class, 'send'])
+        ->name('notify.send');
 });

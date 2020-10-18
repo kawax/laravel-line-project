@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Notifications\LineNotifyTest;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 
@@ -29,5 +30,16 @@ class NotifyController extends Controller
             ])->save();
 
         return redirect()->route('home');
+    }
+
+    /**
+     * @param  Request  $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function send(Request $request)
+    {
+        $request->user()->notify(new LineNotifyTest('OK'));
+
+        return back();
     }
 }
