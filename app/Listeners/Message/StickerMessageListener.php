@@ -2,8 +2,10 @@
 
 namespace App\Listeners\Message;
 
+use App\Notifications\LineNotifyTest;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Support\Facades\Notification;
 use LINE\LINEBot\Event\MessageEvent\StickerMessage;
 use LINE\LINEBot\MessageBuilder\StickerMessageBuilder;
 use Revolution\Line\Facades\Bot;
@@ -32,12 +34,10 @@ class StickerMessageListener
         $packageId = $event->getPackageId();
         $stickerId = $event->getStickerId();
 
-        //Bot::reply($token)->sticker($packageId, $stickerId);
+        $response = Bot::reply($token)->sticker($packageId, $stickerId);
 
-        $response = Bot::reply($token)->text(
-            new StickerMessageBuilder($packageId, $stickerId),
-            "packageId : $packageId / stickerId : $stickerId"
-        );
+        Notification::route('line-notify', config('line.notify.personal_access_token'))
+            ->notify(new LineNotifyTest("packageId : $packageId / stickerId : $stickerId"));
 
         if (!$response->isSucceeded()) {
             logger()->error(static::class.$response->getHTTPStatus(), $response->getJSONDecodedBody());
