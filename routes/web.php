@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\NotifyController;
+use App\Http\Controllers\PushController;
 use Illuminate\Support\Facades\Route;
 use Revolution\Line\Facades\Bot;
 
@@ -41,4 +42,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('notify', [NotifyController::class, 'send'])
         ->name('notify.send');
+
+    Route::get('push', PushController::class)
+        ->name('push');
 });

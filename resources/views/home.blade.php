@@ -21,6 +21,10 @@
                                 <a href="{{ route('notify.send')  }}">LINE Notify: Send test message</a>
                             @endempty
                         </div>
+
+                        <div>
+                            <a href="{{ route('push') }}">Push message</a>
+                        </div>
                     </div>
                 </div>
             </div>
