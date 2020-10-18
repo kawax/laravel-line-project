@@ -36,12 +36,14 @@ Route::get('info', function () {
 });
 
 Route::middleware('auth')->group(function () {
-    Route::get('notify/login', [NotifyController::class, 'login']);
+    Route::get('notify/login', [NotifyController::class, 'login'])
+        ->name('notify.login');
+
     Route::get('notify/callback', [NotifyController::class, 'callback']);
 
     Route::get('notify', function () {
-        $status = LineNotify::withToken(auth()->user()->notify_token)->status();
+        auth()->user()->notify(new LineNotifyTest('OK'));
 
-        auth()->user()->notify(new LineNotifyTest(json_encode($status)));
-    });
+        return back();
+    })->name('notify.send');
 });
