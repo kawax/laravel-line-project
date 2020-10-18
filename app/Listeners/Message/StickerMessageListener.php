@@ -32,6 +32,10 @@ class StickerMessageListener
         $stickerId = $event->getStickerId();
 
         Bot::reply($token)->sticker($packageId, $stickerId);
-        Bot::reply($token)->text("packageId : $packageId / stickerId: $stickerId");
+        $response = Bot::reply($token)->text("packageId : $packageId / stickerId : $stickerId");
+
+        if (!$response->isSucceeded()) {
+            logger()->error(static::class.$response->getHTTPStatus(), $response->getJSONDecodedBody());
+        }
     }
 }
