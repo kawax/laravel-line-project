@@ -7,7 +7,6 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Support\Facades\Notification;
 use LINE\LINEBot\Event\MessageEvent\StickerMessage;
-use LINE\LINEBot\MessageBuilder\StickerMessageBuilder;
 use Revolution\Line\Facades\Bot;
 
 class StickerMessageListener
