@@ -2479,12 +2479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-line-sdk.git",
-                "reference": "7d43a71af70e439988dfe1c6a750dfd9e1994f82"
+                "reference": "92ee308cc83d812e79495d3b4ec5554b9a5fe76f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/7d43a71af70e439988dfe1c6a750dfd9e1994f82",
-                "reference": "7d43a71af70e439988dfe1c6a750dfd9e1994f82",
+                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/92ee308cc83d812e79495d3b4ec5554b9a5fe76f",
+                "reference": "92ee308cc83d812e79495d3b4ec5554b9a5fe76f",
                 "shasum": ""
             },
             "require": {
@@ -2530,7 +2530,7 @@
                 "line",
                 "sdk"
             ],
-            "time": "2020-10-19T04:29:38+00:00"
+            "time": "2020-10-19T22:26:16+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -7096,16 +7096,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.4.1",
+            "version": "9.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "1f09a12726593737e8a228ebb1c8647305d07c41"
+                "reference": "3866b2eeeed21b1b099c4bc0b7a1690ac6fd5baa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1f09a12726593737e8a228ebb1c8647305d07c41",
-                "reference": "1f09a12726593737e8a228ebb1c8647305d07c41",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3866b2eeeed21b1b099c4bc0b7a1690ac6fd5baa",
+                "reference": "3866b2eeeed21b1b099c4bc0b7a1690ac6fd5baa",
                 "shasum": ""
             },
             "require": {
@@ -7191,7 +7191,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-11T07:41:19+00:00"
+            "time": "2020-10-19T09:23:29+00:00"
         },
         {
             "name": "scrivo/highlight.php",
