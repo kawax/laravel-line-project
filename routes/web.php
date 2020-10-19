@@ -30,8 +30,10 @@ Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/home', HomeController::class)->name('home');
 
 Route::get('info', function () {
-    //dump(Bot::info());
+    //dump(Bot::getBotInfo());
     dump(Bot::verifyWebhook());
+    dump(Bot::getNumberOfLimitForAdditional());
+    dump(Bot::getNumberOfSentThisMonth());
 });
 
 Route::middleware('auth')->group(function () {

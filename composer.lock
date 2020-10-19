@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be8a4c68e8a73d576dac77e73c65729d",
+    "content-hash": "9bedcad42eacc2f10350c5d90eacf02c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2475,16 +2475,16 @@
         },
         {
             "name": "revolution/laravel-line-sdk",
-            "version": "1.0.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-line-sdk.git",
-                "reference": "9c55d53fde33a6d53157565719e96d4c3a11f73d"
+                "reference": "bb99850fa90feed172c9438e622735a02703efa6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/9c55d53fde33a6d53157565719e96d4c3a11f73d",
-                "reference": "9c55d53fde33a6d53157565719e96d4c3a11f73d",
+                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/bb99850fa90feed172c9438e622735a02703efa6",
+                "reference": "bb99850fa90feed172c9438e622735a02703efa6",
                 "shasum": ""
             },
             "require": {
@@ -2501,7 +2501,10 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Revolution\\Line\\Providers\\LineServiceProvider"
+                        "Revolution\\Line\\Providers\\LineServiceProvider",
+                        "Revolution\\Line\\Providers\\LineSocialiteServiceProvider",
+                        "Revolution\\Line\\Providers\\RouteServiceProvider",
+                        "Revolution\\Line\\Providers\\MacroServiceProvider"
                     ]
                 }
             },
@@ -2527,7 +2530,7 @@
                 "line",
                 "sdk"
             ],
-            "time": "2020-10-18T07:36:43+00:00"
+            "time": "2020-10-19T00:15:23+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -8431,7 +8434,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "revolution/laravel-line-sdk": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
