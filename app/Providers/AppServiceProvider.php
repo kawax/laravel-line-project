@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\ServiceProvider;
 use Revolution\Line\Facades\Bot;
@@ -27,13 +26,13 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Bot::macro('verifyWebhook', function (): array {
-            return PendingRequest::line()->post('/v2/bot/channel/webhook/test', [
+            return Http::line()->post('/v2/bot/channel/webhook/test', [
                 'endpoint' => ''
             ])->json();
         });
 
         Bot::macro('friendshipStatus', function (string $access_token): array {
-            return PendingRequest::line()
+            return Http::line()
                 ->withToken($access_token)
                 ->get('/friendship/v1/status')
                 ->json();

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9bedcad42eacc2f10350c5d90eacf02c",
+    "content-hash": "958c90b2e20317eed49da6fa407e95cc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2479,12 +2479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-line-sdk.git",
-                "reference": "92ee308cc83d812e79495d3b4ec5554b9a5fe76f"
+                "reference": "2391ac572a19e346e8dff098f73dccf4acd3d2bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/92ee308cc83d812e79495d3b4ec5554b9a5fe76f",
-                "reference": "92ee308cc83d812e79495d3b4ec5554b9a5fe76f",
+                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/2391ac572a19e346e8dff098f73dccf4acd3d2bd",
+                "reference": "2391ac572a19e346e8dff098f73dccf4acd3d2bd",
                 "shasum": ""
             },
             "require": {
@@ -2530,7 +2530,7 @@
                 "line",
                 "sdk"
             ],
-            "time": "2020-10-19T22:26:16+00:00"
+            "time": "2020-10-19T23:07:21+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -5010,16 +5010,16 @@
     "packages-dev": [
         {
             "name": "barryvdh/laravel-ide-helper",
-            "version": "v2.8.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-ide-helper.git",
-                "reference": "affa55122f83575888d4ebf1728992686e8223de"
+                "reference": "0168e7256bfec301864bd1c75b0cc1804c3b874e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/affa55122f83575888d4ebf1728992686e8223de",
-                "reference": "affa55122f83575888d4ebf1728992686e8223de",
+                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/0168e7256bfec301864bd1c75b0cc1804c3b874e",
+                "reference": "0168e7256bfec301864bd1c75b0cc1804c3b874e",
                 "shasum": ""
             },
             "require": {
@@ -5087,7 +5087,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-07T07:36:37+00:00"
+            "time": "2020-09-21T14:26:32+00:00"
         },
         {
             "name": "barryvdh/reflection-docblock",
@@ -8434,7 +8434,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "revolution/laravel-line-sdk": 20
+        "revolution/laravel-line-sdk": 20,
+        "barryvdh/laravel-ide-helper": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
