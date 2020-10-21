@@ -2475,16 +2475,16 @@
         },
         {
             "name": "revolution/laravel-line-sdk",
-            "version": "1.2.1",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-line-sdk.git",
-                "reference": "3a0b70e64ba4ad3747de707e6e19261517c13c6f"
+                "reference": "e677336b888ae3d82d37c7e79e66a5949cce1192"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/3a0b70e64ba4ad3747de707e6e19261517c13c6f",
-                "reference": "3a0b70e64ba4ad3747de707e6e19261517c13c6f",
+                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/e677336b888ae3d82d37c7e79e66a5949cce1192",
+                "reference": "e677336b888ae3d82d37c7e79e66a5949cce1192",
                 "shasum": ""
             },
             "require": {
@@ -2530,7 +2530,7 @@
                 "line",
                 "sdk"
             ],
-            "time": "2020-10-21T00:16:29+00:00"
+            "time": "2020-10-21T06:17:00+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
