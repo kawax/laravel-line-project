@@ -30,7 +30,7 @@ class LoginController extends Controller
         $loginUser = User::updateOrCreate([
             'line_id' => $user->id,
         ], [
-            'name' => 'User',//$user->nickname,
+            'name' => 'User', //$user->nickname,
             'avatar' => $user->avatar,
             'access_token' => $user->token,
             'refresh_token' => $user->refreshToken,
