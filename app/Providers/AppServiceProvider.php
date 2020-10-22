@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Bot::macro('verifyWebhook', function (): array {
             return Http::line()->post('/v2/bot/channel/webhook/test', [
-                'endpoint' => ''
+                'endpoint' => '',
             ])->json();
         });
 

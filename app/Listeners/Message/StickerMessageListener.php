@@ -38,7 +38,7 @@ class StickerMessageListener
         Notification::route('line-notify', config('line.notify.personal_access_token'))
             ->notify(new LineNotifyTest("packageId : $packageId / stickerId : $stickerId"));
 
-        if (!$response->isSucceeded()) {
+        if (! $response->isSucceeded()) {
             logger()->error(static::class.$response->getHTTPStatus(), $response->getJSONDecodedBody());
         }
     }

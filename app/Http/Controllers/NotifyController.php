@@ -26,7 +26,7 @@ class NotifyController extends Controller
 
         $request->user()
             ->fill([
-                'notify_token' => $user->token
+                'notify_token' => $user->token,
             ])->save();
 
         return redirect()->route('home');

@@ -17,7 +17,7 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [
         Registered::class => [
             SendEmailVerificationNotification::class,
-        ]
+        ],
     ];
 
     /**
@@ -29,12 +29,12 @@ class EventServiceProvider extends ServiceProvider
     {
         //
     }
-    
+
     /**
-    * Determine if events and listeners should be automatically discovered.
-    *
-    * @return bool
-    */
+     * Determine if events and listeners should be automatically discovered.
+     *
+     * @return bool
+     */
     public function shouldDiscoverEvents()
     {
         return true;

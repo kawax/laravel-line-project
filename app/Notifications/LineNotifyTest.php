@@ -38,7 +38,7 @@ class LineNotifyTest extends Notification
     public function via($notifiable)
     {
         return [
-            LineNotifyChannel::class
+            LineNotifyChannel::class,
         ];
     }
 
