@@ -2,12 +2,12 @@
 
 namespace App\Listeners\Message;
 
+use App\Notifications\LineNotifyTest;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Support\Facades\Notification;
 use LINE\LINEBot\Event\MessageEvent\TextMessage;
 use Revolution\Line\Messaging\Bot;
-use Illuminate\Support\Facades\Notification;
-use App\Notifications\LineNotifyTest;
 
 class TextMessageListener
 {
