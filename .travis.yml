@@ -1,0 +1,16 @@
+sudo: false
+language: php
+
+jobs:
+  include:
+    - php: 7.4
+
+cache:
+  directories:
+    - vendor
+
+before_script:
+  - travis_retry composer install --no-interaction --no-suggest
+
+script:
+  - vendor/bin/phpunit
