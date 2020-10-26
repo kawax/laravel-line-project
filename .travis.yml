@@ -10,7 +10,7 @@ cache:
     - vendor
 
 before_script:
-  - travis_retry composer install --no-interaction --no-suggest
+  - travis_retry composer install --no-interaction
   - cp .env.example .env
   - php artisan key:generate
 
