@@ -4,7 +4,9 @@ namespace App\Providers;
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\ServiceProvider;
+use Revolution\Line\Contracts\WebhookHandler;
 use Revolution\Line\Facades\Bot;
+use Revolution\Line\Messaging\Http\Actions\WebhookLogHandler;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -16,6 +18,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
+        $this->app->singleton(WebhookHandler::class, WebhookLogHandler::class);
     }
 
     /**
