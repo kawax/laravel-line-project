@@ -18,7 +18,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
-        $this->app->singleton(WebhookHandler::class, WebhookLogHandler::class);
+        //$this->app->singleton(WebhookHandler::class, WebhookLogHandler::class);
     }
 
     /**
