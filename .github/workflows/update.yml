@@ -15,6 +15,6 @@ jobs:
       - name: composer update action
         uses: kawax/composer-update-action@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
           GIT_NAME: kawax
           GIT_EMAIL: kawaxbiz@gmail.com

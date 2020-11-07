@@ -1,0 +1,28 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  tests:
+    name: tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup PHP, with composer and extensions
+        uses: shivammathur/setup-php@v2 #https://github.com/shivammathur/setup-php
+        with:
+          php-version: '7.4'
+          extensions: mbstring, bcmath
+          coverage: xdebug
+      - name: Install Composer dependencies
+        run: composer install --no-interaction --no-progress --prefer-dist --optimize-autoloader
+      - name: Laravel env
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+      - name: Test
+        run: vendor/bin/phpunit
