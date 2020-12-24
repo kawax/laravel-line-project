@@ -5156,12 +5156,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-ide-helper.git",
-                "reference": "36c4406b3a6ae1fd6480ee03eb81551696a324b6"
+                "reference": "25cc68c75f4ce3a7fefd6e2a86a7ebd57a942c6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/36c4406b3a6ae1fd6480ee03eb81551696a324b6",
-                "reference": "36c4406b3a6ae1fd6480ee03eb81551696a324b6",
+                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/25cc68c75f4ce3a7fefd6e2a86a7ebd57a942c6c",
+                "reference": "25cc68c75f4ce3a7fefd6e2a86a7ebd57a942c6c",
                 "shasum": ""
             },
             "require": {
@@ -5235,7 +5235,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-21T10:15:47+00:00"
+            "time": "2020-12-23T11:26:18+00:00"
         },
         {
             "name": "barryvdh/reflection-docblock",
