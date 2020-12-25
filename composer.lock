@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "52fb109d29b354b1edd5b18db42718ed",
+    "content-hash": "10c0d7513ff0e111031d679df8012149",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5152,16 +5152,16 @@
     "packages-dev": [
         {
             "name": "barryvdh/laravel-ide-helper",
-            "version": "dev-master",
+            "version": "v2.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-ide-helper.git",
-                "reference": "25cc68c75f4ce3a7fefd6e2a86a7ebd57a942c6c"
+                "reference": "5515cabea39b9cf55f98980d0f269dc9d85cfcca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/25cc68c75f4ce3a7fefd6e2a86a7ebd57a942c6c",
-                "reference": "25cc68c75f4ce3a7fefd6e2a86a7ebd57a942c6c",
+                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/5515cabea39b9cf55f98980d0f269dc9d85cfcca",
+                "reference": "5515cabea39b9cf55f98980d0f269dc9d85cfcca",
                 "shasum": ""
             },
             "require": {
@@ -5186,7 +5186,6 @@
                 "spatie/phpunit-snapshot-assertions": "^1.4 || ^2.2 || ^3 || ^4",
                 "vimeo/psalm": "^3.12"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -5227,7 +5226,7 @@
             ],
             "support": {
                 "issues": "https://github.com/barryvdh/laravel-ide-helper/issues",
-                "source": "https://github.com/barryvdh/laravel-ide-helper/tree/master"
+                "source": "https://github.com/barryvdh/laravel-ide-helper/tree/v2.8.2"
             },
             "funding": [
                 {
@@ -5235,7 +5234,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-23T11:26:18+00:00"
+            "time": "2020-12-06T08:55:05+00:00"
         },
         {
             "name": "barryvdh/reflection-docblock",
@@ -8706,9 +8705,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "barryvdh/laravel-ide-helper": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
