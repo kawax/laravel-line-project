@@ -2583,16 +2583,16 @@
         },
         {
             "name": "revolution/laravel-line-sdk",
-            "version": "1.2.8",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-line-sdk.git",
-                "reference": "6fec68773e2d535603590590e33e510e611a29e3"
+                "reference": "2f4866aeb3fc4dedb2171f4825ec333778e065dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/6fec68773e2d535603590590e33e510e611a29e3",
-                "reference": "6fec68773e2d535603590590e33e510e611a29e3",
+                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/2f4866aeb3fc4dedb2171f4825ec333778e065dc",
+                "reference": "2f4866aeb3fc4dedb2171f4825ec333778e065dc",
                 "shasum": ""
             },
             "require": {
@@ -2600,7 +2600,7 @@
                 "illuminate/support": "^6.0||^7.0||^8.0",
                 "laravel/socialite": "^5.0",
                 "linecorp/line-bot-sdk": "^6.0",
-                "php": "^7.2||^8.0"
+                "php": "^7.3||^8.0"
             },
             "require-dev": {
                 "orchestra/testbench": "^4.0||^5.0||^6.0"
@@ -2640,9 +2640,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/laravel-line-sdk/issues",
-                "source": "https://github.com/kawax/laravel-line-sdk/tree/1.2.8"
+                "source": "https://github.com/kawax/laravel-line-sdk/tree/1.3.0"
             },
-            "time": "2020-10-28T11:29:14+00:00"
+            "time": "2021-01-01T08:47:06+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
