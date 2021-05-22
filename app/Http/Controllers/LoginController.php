@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 
@@ -38,7 +39,7 @@ class LoginController extends Controller
 
         auth()->login($loginUser, true);
 
-        return redirect()->route('home');
+        return redirect(RouteServiceProvider::HOME);
     }
 
     public function logout()

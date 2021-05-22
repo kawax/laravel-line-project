@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Notifications\LineNotifyTest;
+use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 
@@ -29,7 +30,7 @@ class NotifyController extends Controller
                 'notify_token' => $user->token,
             ])->save();
 
-        return redirect()->route('home');
+        return redirect(RouteServiceProvider::HOME);
     }
 
     /**

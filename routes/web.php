@@ -1,10 +1,8 @@
 <?php
 
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\NotifyController;
 use App\Http\Controllers\PushController;
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 use Revolution\Line\Facades\Bot;
 
@@ -27,8 +25,6 @@ Route::get('login', [LoginController::class, 'login'])->name('login');
 Route::get('callback', [LoginController::class, 'callback']);
 Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::get('/home', HomeController::class)->name('home');
-
 Route::middleware('auth')->group(function () {
     Route::get('notify/login', [NotifyController::class, 'login'])
         ->name('notify.login');
@@ -50,3 +46,7 @@ Route::middleware('auth')->group(function () {
         dump(Bot::friendshipStatus(auth()->user()->access_token));
     });
 });
+
+Route::view('/dashboard', 'dashboard')
+    ->middleware(['auth'])
+    ->name('dashboard');
