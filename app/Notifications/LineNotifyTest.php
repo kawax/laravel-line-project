@@ -21,7 +21,6 @@ class LineNotifyTest extends Notification
      * Create a new notification instance.
      *
      * @param  string  $message
-     *
      * @return void
      */
     public function __construct($message)
