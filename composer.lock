@@ -982,16 +982,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v9.52.0",
+            "version": "v9.52.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "eb85cd9d72e5bfa54b4d0d9040786f26d6184a9e"
+                "reference": "9239128cfb4d22afefb64060dfecf53e82987267"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/eb85cd9d72e5bfa54b4d0d9040786f26d6184a9e",
-                "reference": "eb85cd9d72e5bfa54b4d0d9040786f26d6184a9e",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/9239128cfb4d22afefb64060dfecf53e82987267",
+                "reference": "9239128cfb4d22afefb64060dfecf53e82987267",
                 "shasum": ""
             },
             "require": {
@@ -1176,7 +1176,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-02-14T14:51:14+00:00"
+            "time": "2023-02-22T14:38:06+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -1309,16 +1309,16 @@
         },
         {
             "name": "laravel/tinker",
-            "version": "v2.8.0",
+            "version": "v2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/tinker.git",
-                "reference": "74d0b287cc4ae65d15c368dd697aae71d62a73ad"
+                "reference": "04a2d3bd0d650c0764f70bf49d1ee39393e4eb10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/74d0b287cc4ae65d15c368dd697aae71d62a73ad",
-                "reference": "74d0b287cc4ae65d15c368dd697aae71d62a73ad",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/04a2d3bd0d650c0764f70bf49d1ee39393e4eb10",
+                "reference": "04a2d3bd0d650c0764f70bf49d1ee39393e4eb10",
                 "shasum": ""
             },
             "require": {
@@ -1371,9 +1371,9 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/tinker/issues",
-                "source": "https://github.com/laravel/tinker/tree/v2.8.0"
+                "source": "https://github.com/laravel/tinker/tree/v2.8.1"
             },
-            "time": "2023-01-10T18:03:30+00:00"
+            "time": "2023-02-15T16:40:09+00:00"
         },
         {
             "name": "league/commonmark",
@@ -1565,16 +1565,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.12.2",
+            "version": "3.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "f6377c709d2275ed6feaf63e44be7a7162b0e77f"
+                "reference": "81e87e74dd5213795c7846d65089712d2dda90ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f6377c709d2275ed6feaf63e44be7a7162b0e77f",
-                "reference": "f6377c709d2275ed6feaf63e44be7a7162b0e77f",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/81e87e74dd5213795c7846d65089712d2dda90ce",
+                "reference": "81e87e74dd5213795c7846d65089712d2dda90ce",
                 "shasum": ""
             },
             "require": {
@@ -1636,7 +1636,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.12.2"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.12.3"
             },
             "funding": [
                 {
@@ -1652,7 +1652,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-19T12:02:19+00:00"
+            "time": "2023-02-18T15:32:41+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -6525,16 +6525,16 @@
         },
         {
             "name": "laravel/breeze",
-            "version": "v1.19.1",
+            "version": "v1.19.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/breeze.git",
-                "reference": "4bbb1ea3476901c4f5fc706f8d80e4eac31c3afb"
+                "reference": "725e0c4fb1f630afdd90b5fba2a7f6d8d547ac29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/breeze/zipball/4bbb1ea3476901c4f5fc706f8d80e4eac31c3afb",
-                "reference": "4bbb1ea3476901c4f5fc706f8d80e4eac31c3afb",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/725e0c4fb1f630afdd90b5fba2a7f6d8d547ac29",
+                "reference": "725e0c4fb1f630afdd90b5fba2a7f6d8d547ac29",
                 "shasum": ""
             },
             "require": {
@@ -6582,7 +6582,7 @@
                 "issues": "https://github.com/laravel/breeze/issues",
                 "source": "https://github.com/laravel/breeze"
             },
-            "time": "2023-02-14T16:22:13+00:00"
+            "time": "2023-02-18T20:55:43+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -8457,16 +8457,16 @@
         },
         {
             "name": "spatie/backtrace",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/backtrace.git",
-                "reference": "4ee7d41aa5268107906ea8a4d9ceccde136dbd5b"
+                "reference": "7b34fee6c1ad45f8ee0498d17cd8ea9a076402c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/backtrace/zipball/4ee7d41aa5268107906ea8a4d9ceccde136dbd5b",
-                "reference": "4ee7d41aa5268107906ea8a4d9ceccde136dbd5b",
+                "url": "https://api.github.com/repos/spatie/backtrace/zipball/7b34fee6c1ad45f8ee0498d17cd8ea9a076402c1",
+                "reference": "7b34fee6c1ad45f8ee0498d17cd8ea9a076402c1",
                 "shasum": ""
             },
             "require": {
@@ -8502,8 +8502,7 @@
                 "spatie"
             ],
             "support": {
-                "issues": "https://github.com/spatie/backtrace/issues",
-                "source": "https://github.com/spatie/backtrace/tree/1.2.1"
+                "source": "https://github.com/spatie/backtrace/tree/1.2.2"
             },
             "funding": [
                 {
@@ -8515,7 +8514,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2021-11-09T10:57:15+00:00"
+            "time": "2023-02-21T08:29:12+00:00"
         },
         {
             "name": "spatie/flare-client-php",
