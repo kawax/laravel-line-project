@@ -3107,16 +3107,16 @@
         },
         {
             "name": "revolution/laravel-line-sdk",
-            "version": "2.2.1",
+            "version": "2.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-line-sdk.git",
-                "reference": "4cca81cb4add54a1b3ea5cf7978f53c9d0ace7e8"
+                "reference": "79280d5a5e72c776f71fec857c94b384c55501cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/4cca81cb4add54a1b3ea5cf7978f53c9d0ace7e8",
-                "reference": "4cca81cb4add54a1b3ea5cf7978f53c9d0ace7e8",
+                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/79280d5a5e72c776f71fec857c94b384c55501cf",
+                "reference": "79280d5a5e72c776f71fec857c94b384c55501cf",
                 "shasum": ""
             },
             "require": {
@@ -3165,9 +3165,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/laravel-line-sdk/issues",
-                "source": "https://github.com/kawax/laravel-line-sdk/tree/2.2.1"
+                "source": "https://github.com/kawax/laravel-line-sdk/tree/2.2.2"
             },
-            "time": "2023-02-27T02:20:17+00:00"
+            "time": "2023-02-27T02:29:29+00:00"
         },
         {
             "name": "symfony/console",
