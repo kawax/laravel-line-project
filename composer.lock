@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12353aa8380e4a92ef2de4a467eebe19",
+    "content-hash": "f69682b616f0931ea5e8f8f29082c7c5",
     "packages": [
         {
             "name": "brick/math",
@@ -3107,16 +3107,16 @@
         },
         {
             "name": "revolution/laravel-line-sdk",
-            "version": "2.1.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-line-sdk.git",
-                "reference": "205b836fd73b8938c464e7caaa234674b7611847"
+                "reference": "4cca81cb4add54a1b3ea5cf7978f53c9d0ace7e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/205b836fd73b8938c464e7caaa234674b7611847",
-                "reference": "205b836fd73b8938c464e7caaa234674b7611847",
+                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/4cca81cb4add54a1b3ea5cf7978f53c9d0ace7e8",
+                "reference": "4cca81cb4add54a1b3ea5cf7978f53c9d0ace7e8",
                 "shasum": ""
             },
             "require": {
@@ -3128,7 +3128,7 @@
             },
             "require-dev": {
                 "orchestra/testbench": "^7.0||^8.0",
-                "phpunit/phpunit": "^9.5"
+                "phpunit/phpunit": "^10.0"
             },
             "type": "library",
             "extra": {
@@ -3165,9 +3165,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/laravel-line-sdk/issues",
-                "source": "https://github.com/kawax/laravel-line-sdk/tree/2.1.0"
+                "source": "https://github.com/kawax/laravel-line-sdk/tree/2.2.1"
             },
-            "time": "2023-01-28T02:28:51+00:00"
+            "time": "2023-02-27T02:20:17+00:00"
         },
         {
             "name": "symfony/console",
