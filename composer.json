@@ -13,6 +13,7 @@
         "laravel/framework": "^10.0",
         "laravel/socialite": "^5.6",
         "laravel/tinker": "^2.0",
+        "openai-php/laravel": "^0.4.1",
         "revolution/laravel-line-sdk": "^2.2"
     },
     "require-dev": {
@@ -30,6 +31,9 @@
         "sort-packages": true,
         "platform": {
             "ext-sockets": "1.0.0"
+        },
+        "allow-plugins": {
+            "php-http/discovery": true
         }
     },
     "extra": {
