@@ -47,8 +47,8 @@ class LineTest extends TestCase
         $listener = new TextMessageListener();
         $listener->handle($event);
 
-//        Notification::assertSentTo(
-//            new AnonymousNotifiable, LineNotifyTest::class
-//        );
+        Notification::assertSentTo(
+            new AnonymousNotifiable, LineNotifyTest::class
+        );
     }
 }
