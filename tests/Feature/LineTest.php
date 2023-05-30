@@ -2,13 +2,10 @@
 
 namespace Tests\Feature;
 
-use App\Listeners\Message\TextMessageListener;
-use App\Notifications\LineNotifyTest;
-use Illuminate\Notifications\AnonymousNotifiable;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Notification;
-use LINE\LINEBot\Event\MessageEvent\TextMessage;
-use LINE\LINEBot\Response;
+use App\Listeners\Line\MessageListener;
+use LINE\Webhook\Model\MessageEvent;
+use LINE\Webhook\Model\StickerMessageContent;
+use LINE\Webhook\Model\TextMessageContent;
 use Mockery as m;
 use Revolution\Line\Messaging\Bot;
 use Tests\TestCase;
@@ -17,38 +14,40 @@ class LineTest extends TestCase
 {
     public function testTextMessageListener()
     {
-        $event = m::mock(TextMessage::class);
+        $event = m::mock(MessageEvent::class);
         $event->shouldReceive('getReplyToken')
             ->once()
             ->andReturn('tokens');
-        $event->shouldReceive('getText')
+        $event->shouldReceive('getMessage')
             ->once()
-            ->andReturn('text');
+            ->andReturn(new TextMessageContent([
+                'text' => 'test',
+            ]));
 
-        $response = m::mock(Response::class);
-        $response->shouldReceive('isSucceeded')
-            ->once()
-            ->andReturnFalse();
-        $response->shouldReceive('getHTTPStatus')
-            ->once()
-            ->andReturn(400);
-        $response->shouldReceive('getJSONDecodedBody')
-            ->once()
-            ->andReturn([]);
+        Bot::shouldReceive('reply->text')
+            ->once();
 
-        Bot::shouldReceive('reply->withSender->text')
-            ->once()
-            ->andReturn($response);
-
-        Log::shouldReceive('error')->once();
-
-        Notification::fake();
-
-        $listener = new TextMessageListener();
+        $listener = new MessageListener();
         $listener->handle($event);
+    }
 
-        Notification::assertSentTo(
-            new AnonymousNotifiable, LineNotifyTest::class
-        );
+    public function testStickerMessageListener()
+    {
+        $event = m::mock(MessageEvent::class);
+        $event->shouldReceive('getReplyToken')
+            ->once()
+            ->andReturn('tokens');
+        $event->shouldReceive('getMessage')
+            ->once()
+            ->andReturn(new StickerMessageContent([
+                'packageId' => 1,
+                'stickerId' => 1,
+            ]));
+
+        Bot::shouldReceive('reply->sticker')
+            ->once();
+
+        $listener = new MessageListener();
+        $listener->handle($event);
     }
 }
