@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use LINE\LINEBot\MessageBuilder\TextMessageBuilder;
+use LINE\Clients\MessagingApi\Model\PushMessageRequest;
+use LINE\Clients\MessagingApi\Model\TextMessage;
+use LINE\Constants\MessageType;
 use Revolution\Line\Facades\Bot;
 
 class PushController extends Controller
@@ -17,13 +19,14 @@ class PushController extends Controller
      */
     public function __invoke(Request $request): RedirectResponse
     {
-        $message = new TextMessageBuilder('PushMessage test');
+        $message = new TextMessage(['text' => 'PushMessage test', 'type' => MessageType::TEXT]);
 
-        $response = Bot::pushMessage($request->user()->line_id, $message);
+        $push = new PushMessageRequest([
+            'to' => $request->user()->line_id,
+            'messages' => [$message],
+        ]);
 
-        if (! $response->isSucceeded()) {
-            logger()->error(static::class.$response->getHTTPStatus(), $response->getJSONDecodedBody());
-        }
+        Bot::pushMessage($push);
 
         return back();
     }
