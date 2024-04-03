@@ -39,7 +39,7 @@ class LoginController extends Controller
 
         auth()->login($loginUser, true);
 
-        return redirect(RouteServiceProvider::HOME);
+        return to_route('dashboard');
     }
 
     public function logout()
