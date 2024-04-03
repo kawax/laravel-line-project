@@ -6,17 +6,6 @@ use App\Http\Controllers\PushController;
 use Illuminate\Support\Facades\Route;
 use Revolution\Line\Facades\Bot;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -38,10 +27,8 @@ Route::middleware('auth')->group(function () {
         ->name('push');
 
     Route::get('info', function () {
-        //dump(Bot::getBotInfo());
+        dump(Bot::getBotInfo());
         dump(Bot::verifyWebhook());
-        dump(Bot::getNumberOfLimitForAdditional());
-        dump(Bot::getNumberOfSentThisMonth());
 
         dump(Bot::friendshipStatus(auth()->user()->access_token));
     });
