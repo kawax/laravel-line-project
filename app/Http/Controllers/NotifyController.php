@@ -30,7 +30,7 @@ class NotifyController extends Controller
                 'notify_token' => $user->token,
             ])->save();
 
-        return redirect(RouteServiceProvider::HOME);
+        return to_route('dashboard');
     }
 
     /**
