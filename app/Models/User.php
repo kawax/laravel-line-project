@@ -52,4 +52,9 @@ class User extends Authenticatable
     {
         return $this->notify_token;
     }
+
+    public function routeNotificationForLine($notification)
+    {
+        return $this->line_id;
+    }
 }

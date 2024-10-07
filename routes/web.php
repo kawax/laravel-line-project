@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\NotifyController;
 use App\Http\Controllers\PushController;
 use Illuminate\Support\Facades\Route;
@@ -25,6 +26,9 @@ Route::middleware('auth')->group(function () {
 
     Route::get('push', PushController::class)
         ->name('push');
+
+    Route::get('notification', NotificationController::class)
+        ->name('notification');
 
     Route::get('info', function () {
         dump(Bot::getBotInfo());
