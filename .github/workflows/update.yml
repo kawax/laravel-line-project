@@ -10,8 +10,6 @@ jobs:
     secrets:
       token: ${{ secrets.ACTION_TOKEN }}
     with:
-      php: 8.3
-      extensions: mbstring
       git-name: kawax
       git-email: 1502086+kawax@users.noreply.github.com
   npm:
