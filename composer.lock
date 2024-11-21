@@ -1119,16 +1119,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v11.31.0",
+            "version": "v11.33.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "365090ed2c68244e3141cdb5e247cdf3dfba2c40"
+                "reference": "6b9832751cf8eed18b3c73df5071f78f0682aa5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/365090ed2c68244e3141cdb5e247cdf3dfba2c40",
-                "reference": "365090ed2c68244e3141cdb5e247cdf3dfba2c40",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/6b9832751cf8eed18b3c73df5071f78f0682aa5d",
+                "reference": "6b9832751cf8eed18b3c73df5071f78f0682aa5d",
                 "shasum": ""
             },
             "require": {
@@ -1148,7 +1148,7 @@
                 "guzzlehttp/guzzle": "^7.8",
                 "guzzlehttp/uri-template": "^1.0",
                 "laravel/prompts": "^0.1.18|^0.2.0|^0.3.0",
-                "laravel/serializable-closure": "^1.3",
+                "laravel/serializable-closure": "^1.3|^2.0",
                 "league/commonmark": "^2.2.1",
                 "league/flysystem": "^3.8.0",
                 "monolog/monolog": "^3.0",
@@ -1231,9 +1231,9 @@
                 "league/flysystem-path-prefixing": "^3.3",
                 "league/flysystem-read-only": "^3.3",
                 "league/flysystem-sftp-v3": "^3.0",
-                "mockery/mockery": "^1.6",
+                "mockery/mockery": "^1.6.10",
                 "nyholm/psr7": "^1.2",
-                "orchestra/testbench-core": "^9.5",
+                "orchestra/testbench-core": "^9.6",
                 "pda/pheanstalk": "^5.0",
                 "phpstan/phpstan": "^1.11.5",
                 "phpunit/phpunit": "^10.5|^11.0",
@@ -1324,7 +1324,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-11-12T15:36:15+00:00"
+            "time": "2024-11-19T22:47:13+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -1387,32 +1387,32 @@
         },
         {
             "name": "laravel/serializable-closure",
-            "version": "v1.3.6",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/serializable-closure.git",
-                "reference": "f865a58ea3a0107c336b7045104c75243fa59d96"
+                "reference": "0d8d3d8086984996df86596a86dea60398093a81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/f865a58ea3a0107c336b7045104c75243fa59d96",
-                "reference": "f865a58ea3a0107c336b7045104c75243fa59d96",
+                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/0d8d3d8086984996df86596a86dea60398093a81",
+                "reference": "0d8d3d8086984996df86596a86dea60398093a81",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.3|^8.0"
+                "php": "^8.1"
             },
             "require-dev": {
-                "illuminate/support": "^8.0|^9.0|^10.0|^11.0",
-                "nesbot/carbon": "^2.61|^3.0",
-                "pestphp/pest": "^1.21.3",
-                "phpstan/phpstan": "^1.8.2",
-                "symfony/var-dumper": "^5.4.11|^6.2.0|^7.0.0"
+                "illuminate/support": "^10.0|^11.0",
+                "nesbot/carbon": "^2.67|^3.0",
+                "pestphp/pest": "^2.36",
+                "phpstan/phpstan": "^2.0",
+                "symfony/var-dumper": "^6.2.0|^7.0.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
@@ -1444,7 +1444,7 @@
                 "issues": "https://github.com/laravel/serializable-closure/issues",
                 "source": "https://github.com/laravel/serializable-closure"
             },
-            "time": "2024-11-11T17:06:04+00:00"
+            "time": "2024-11-19T01:38:44+00:00"
         },
         {
             "name": "laravel/socialite",
@@ -3655,16 +3655,16 @@
         },
         {
             "name": "revolution/laravel-line-sdk",
-            "version": "3.3.7",
+            "version": "3.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-line-sdk.git",
-                "reference": "1c8127ac3408ee68d509d116199a8f0b565e8c9a"
+                "reference": "f58b554b8e9fd15fb3807471da93bc17cad3ffca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/1c8127ac3408ee68d509d116199a8f0b565e8c9a",
-                "reference": "1c8127ac3408ee68d509d116199a8f0b565e8c9a",
+                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/f58b554b8e9fd15fb3807471da93bc17cad3ffca",
+                "reference": "f58b554b8e9fd15fb3807471da93bc17cad3ffca",
                 "shasum": ""
             },
             "require": {
@@ -3712,9 +3712,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/laravel-line-sdk/issues",
-                "source": "https://github.com/kawax/laravel-line-sdk/tree/3.3.7"
+                "source": "https://github.com/kawax/laravel-line-sdk/tree/3.3.8"
             },
-            "time": "2024-10-10T04:29:34+00:00"
+            "time": "2024-11-17T10:20:33+00:00"
         },
         {
             "name": "symfony/clock",
@@ -6081,16 +6081,16 @@
         },
         {
             "name": "voku/portable-ascii",
-            "version": "2.0.1",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "b56450eed252f6801410d810c8e1727224ae0743"
+                "reference": "b1d923f88091c6bf09699efcd7c8a1b1bfd7351d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/b56450eed252f6801410d810c8e1727224ae0743",
-                "reference": "b56450eed252f6801410d810c8e1727224ae0743",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/b1d923f88091c6bf09699efcd7c8a1b1bfd7351d",
+                "reference": "b1d923f88091c6bf09699efcd7c8a1b1bfd7351d",
                 "shasum": ""
             },
             "require": {
@@ -6115,7 +6115,7 @@
             "authors": [
                 {
                     "name": "Lars Moelleken",
-                    "homepage": "http://www.moelleken.org/"
+                    "homepage": "https://www.moelleken.org/"
                 }
             ],
             "description": "Portable ASCII library - performance optimized (ascii) string functions for php.",
@@ -6127,7 +6127,7 @@
             ],
             "support": {
                 "issues": "https://github.com/voku/portable-ascii/issues",
-                "source": "https://github.com/voku/portable-ascii/tree/2.0.1"
+                "source": "https://github.com/voku/portable-ascii/tree/2.0.3"
             },
             "funding": [
                 {
@@ -6151,7 +6151,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-08T17:03:00+00:00"
+            "time": "2024-11-21T01:49:47+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -8667,16 +8667,16 @@
         },
         {
             "name": "spatie/backtrace",
-            "version": "1.6.2",
+            "version": "1.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/backtrace.git",
-                "reference": "1a9a145b044677ae3424693f7b06479fc8c137a9"
+                "reference": "7c18db2bc667ac84e5d7c18e33f16c38ff2d8838"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/backtrace/zipball/1a9a145b044677ae3424693f7b06479fc8c137a9",
-                "reference": "1a9a145b044677ae3424693f7b06479fc8c137a9",
+                "url": "https://api.github.com/repos/spatie/backtrace/zipball/7c18db2bc667ac84e5d7c18e33f16c38ff2d8838",
+                "reference": "7c18db2bc667ac84e5d7c18e33f16c38ff2d8838",
                 "shasum": ""
             },
             "require": {
@@ -8714,7 +8714,7 @@
                 "spatie"
             ],
             "support": {
-                "source": "https://github.com/spatie/backtrace/tree/1.6.2"
+                "source": "https://github.com/spatie/backtrace/tree/1.6.3"
             },
             "funding": [
                 {
@@ -8726,7 +8726,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2024-07-22T08:21:24+00:00"
+            "time": "2024-11-18T14:58:58+00:00"
         },
         {
             "name": "spatie/error-solutions",
