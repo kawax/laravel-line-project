@@ -15,21 +15,6 @@
 
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
-
-                    @empty(auth()->user()->notify_token)
-                        <a href="{{ route('notify.login') }}" class="underline">
-                            LINE Notify: Login
-                        </a>
-                    @else
-                        <a href="{{ route('notify.send')  }}" class="underline">
-                            LINE Notify: Send test message
-                        </a>
-                    @endempty
-                </div>
-            </div>
-
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
                     <a href="{{ route('push') }}" class="underline">
                         Push message
                     </a>

@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\NotificationController;
-use App\Http\Controllers\NotifyController;
 use App\Http\Controllers\PushController;
 use Illuminate\Support\Facades\Route;
 use Revolution\Line\Facades\Bot;
@@ -16,14 +15,6 @@ Route::get('callback', [LoginController::class, 'callback']);
 Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::middleware('auth')->group(function () {
-    Route::get('notify/login', [NotifyController::class, 'login'])
-        ->name('notify.login');
-
-    Route::get('notify/callback', [NotifyController::class, 'callback']);
-
-    Route::get('notify', [NotifyController::class, 'send'])
-        ->name('notify.send');
-
     Route::get('push', PushController::class)
         ->name('push');
 
