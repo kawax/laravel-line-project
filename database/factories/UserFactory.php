@@ -24,9 +24,11 @@ class UserFactory extends Factory
     {
         return [
             'name' => $this->faker->name,
-            'email' => $this->faker->unique()->safeEmail,
-            'email_verified_at' => now(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'line_id' => 'U'.$this->faker->unique()->regexify('[a-f0-9]{32}'),
+            'avatar' => $this->faker->imageUrl(300, 300, 'people'),
+            'access_token' => $this->faker->regexify('[A-Za-z0-9]{200}'),
+            'refresh_token' => $this->faker->regexify('[A-Za-z0-9]{43}'),
+            'notify_token' => $this->faker->regexify('[A-Za-z0-9]{43}'),
             'remember_token' => Str::random(10),
         ];
     }
