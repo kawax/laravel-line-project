@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1749714034">
+  <project timestamp="1749714034" name="Clover Coverage">
+    <package name="App\Http\Controllers">
+      <file name="/home/runner/work/laravel-line-project/laravel-line-project/app/Http/Controllers/Controller.php">
+        <class name="App\Http\Controllers\Controller" namespace="App\Http\Controllers">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="9" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/home/runner/work/laravel-line-project/laravel-line-project/app/Http/Controllers/LoginController.php">
+        <class name="App\Http\Controllers\LoginController" namespace="App\Http\Controllers">
+          <metrics complexity="4" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="0" elements="22" coveredelements="0"/>
+        </class>
+        <line num="11" type="method" name="login" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="15" type="stmt" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <line num="19" type="method" name="callback" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="44" type="method" name="logout" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <metrics loc="51" ncloc="47" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="0" elements="22" coveredelements="0"/>
+      </file>
+      <file name="/home/runner/work/laravel-line-project/laravel-line-project/app/Http/Controllers/NotificationController.php">
+        <class name="App\Http\Controllers\NotificationController" namespace="App\Http\Controllers">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="10" type="method" name="__invoke" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="12" type="stmt" count="2"/>
+        <line num="14" type="stmt" count="2"/>
+        <metrics loc="17" ncloc="17" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+      <file name="/home/runner/work/laravel-line-project/laravel-line-project/app/Http/Controllers/PushController.php">
+        <class name="App\Http\Controllers\PushController" namespace="App\Http\Controllers">
+          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="8" coveredelements="0"/>
+        </class>
+        <line num="17" type="method" name="__invoke" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <metrics loc="31" ncloc="28" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="8" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Listeners\Line">
+      <file name="/home/runner/work/laravel-line-project/laravel-line-project/app/Listeners/Line/MessageListener.php">
+        <class name="App\Listeners\Line\MessageListener" namespace="App\Listeners\Line">
+          <metrics complexity="6" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="16" coveredelements="0"/>
+        </class>
+        <line num="22" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="33" type="method" name="handle" visibility="public" complexity="3" crap="12" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="47" type="method" name="text" visibility="protected" complexity="1" crap="2" count="0"/>
+        <line num="49" type="stmt" count="0"/>
+        <line num="55" type="method" name="sticker" visibility="protected" complexity="1" crap="2" count="0"/>
+        <line num="57" type="stmt" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="59" type="stmt" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <metrics loc="63" ncloc="45" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="16" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Models">
+      <file name="/home/runner/work/laravel-line-project/laravel-line-project/app/Models/User.php">
+        <class name="App\Models\User" namespace="App\Models">
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+        </class>
+        <line num="43" type="method" name="casts" visibility="protected" complexity="1" crap="1" count="10"/>
+        <line num="45" type="stmt" count="10"/>
+        <line num="46" type="stmt" count="10"/>
+        <line num="47" type="stmt" count="10"/>
+        <line num="50" type="method" name="routeNotificationForLine" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <metrics loc="55" ncloc="40" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+      </file>
+    </package>
+    <package name="App\Notifications">
+      <file name="/home/runner/work/laravel-line-project/laravel-line-project/app/Notifications/LineTest.php">
+        <class name="App\Notifications\LineTest" namespace="App\Notifications">
+          <metrics complexity="4" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="12" coveredelements="12"/>
+        </class>
+        <line num="20" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="12"/>
+        <line num="23" type="stmt" count="12"/>
+        <line num="28" type="method" name="via" visibility="public" complexity="1" crap="1" count="7"/>
+        <line num="30" type="stmt" count="7"/>
+        <line num="31" type="stmt" count="7"/>
+        <line num="32" type="stmt" count="7"/>
+        <line num="35" type="method" name="toLine" visibility="public" complexity="1" crap="1" count="4"/>
+        <line num="37" type="stmt" count="4"/>
+        <line num="38" type="stmt" count="4"/>
+        <line num="39" type="stmt" count="4"/>
+        <line num="45" type="method" name="getMessage" visibility="public" complexity="1" crap="1" count="5"/>
+        <line num="47" type="stmt" count="5"/>
+        <metrics loc="50" ncloc="38" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="12" coveredelements="12"/>
+      </file>
+    </package>
+    <package name="App\Providers">
+      <file name="/home/runner/work/laravel-line-project/laravel-line-project/app/Providers/AppServiceProvider.php">
+        <class name="App\Providers\AppServiceProvider" namespace="App\Providers">
+          <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="5" elements="14" coveredelements="6"/>
+        </class>
+        <line num="18" type="method" name="register" visibility="public" complexity="1" crap="1" count="13"/>
+        <line num="22" type="stmt" count="13"/>
+        <line num="29" type="method" name="boot" visibility="public" complexity="1" crap="1.26" count="13"/>
+        <line num="31" type="stmt" count="13"/>
+        <line num="32" type="stmt" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="13"/>
+        <line num="37" type="stmt" count="13"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="13"/>
+        <metrics loc="45" ncloc="33" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="5" elements="14" coveredelements="6"/>
+      </file>
+    </package>
+    <package name="App\View\Components">
+      <file name="/home/runner/work/laravel-line-project/laravel-line-project/app/View/Components/AppLayout.php">
+        <class name="App\View\Components\AppLayout" namespace="App\View\Components">
+          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+        </class>
+        <line num="14" type="method" name="render" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <metrics loc="19" ncloc="14" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </file>
+      <file name="/home/runner/work/laravel-line-project/laravel-line-project/app/View/Components/GuestLayout.php">
+        <class name="App\View\Components\GuestLayout" namespace="App\View\Components">
+          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+        </class>
+        <line num="14" type="method" name="render" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <metrics loc="19" ncloc="14" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="10" loc="359" ncloc="284" classes="9" methods="19" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="66" coveredstatements="19" elements="85" coveredelements="27"/>
+  </project>
+</coverage>
