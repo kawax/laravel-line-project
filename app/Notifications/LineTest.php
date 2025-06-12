@@ -38,4 +38,12 @@ class LineTest extends Notification
             ->text($this->message)
             ->sticker(446, random_int(1988, 2027));
     }
+
+    /**
+     * Get the message content (for testing purposes).
+     */
+    public function getMessage(): string
+    {
+        return $this->message;
+    }
 }
