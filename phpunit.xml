@@ -12,6 +12,11 @@
             <directory>./tests/Feature</directory>
         </testsuite>
     </testsuites>
+    <coverage>
+        <report>
+            <clover outputFile="build/logs/clover.xml"/>
+        </report>
+    </coverage>
     <source>
         <include>
             <directory>./app</directory>
