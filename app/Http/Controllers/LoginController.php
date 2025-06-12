@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Laravel\Socialite\Facades\Socialite;
 
 class LoginController extends Controller
@@ -19,7 +20,13 @@ class LoginController extends Controller
     public function callback(Request $request)
     {
         if ($request->missing('code')) {
-            dd($request);
+            Log::info('Login callback called without code parameter', [
+                'request_data' => $request->all(),
+                'ip' => $request->ip(),
+                'user_agent' => $request->userAgent(),
+            ]);
+
+            return redirect()->route('login')->with('error', 'Authorization failed. Please try logging in again.');
         }
 
         /**
