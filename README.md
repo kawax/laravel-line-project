@@ -255,3 +255,6 @@ public function handle(MessageEvent $event): void
 ```
 
 This approach prevents webhook timeouts while allowing complex business logic to run in the background.
+
+## LICENSE
+MIT
