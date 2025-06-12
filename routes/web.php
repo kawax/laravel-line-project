@@ -8,7 +8,7 @@ use Revolution\Line\Facades\Bot;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('login', [LoginController::class, 'login'])->name('login');
 Route::get('callback', [LoginController::class, 'callback']);
