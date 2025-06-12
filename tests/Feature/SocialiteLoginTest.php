@@ -137,10 +137,10 @@ class SocialiteLoginTest extends TestCase
 
     public function test_callback_handles_missing_code_parameter()
     {
-        // The controller uses dd() when code is missing, which causes the request to terminate
-        // In a testing environment, this is expected behavior for debugging purposes
-        // We'll skip this test as it's more of a debug feature than business logic
-        $this->markTestSkipped('Controller uses dd() for missing code parameter - this is debug behavior');
+        $response = $this->get('/callback');
+
+        $response->assertRedirect('/login');
+        $response->assertSessionHas('error', 'Authorization failed. Please try logging in again.');
     }
 
     public function test_callback_handles_socialite_exception()
