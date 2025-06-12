@@ -36,21 +36,15 @@ class User extends Authenticatable
     ];
 
     /**
-     * The attributes that should be cast to native types.
+     * Get the attributes that should be cast.
      *
-     * @var array
+     * @return array<string, string>
      */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
-
-    /**
-     * @param  \Illuminate\Notifications\Notification  $notification
-     * @return string
-     */
-    public function routeNotificationForLineNotify($notification)
+    protected function casts(): array
     {
-        return $this->notify_token;
+        return [
+            'email_verified_at' => 'datetime',
+        ];
     }
 
     public function routeNotificationForLine($notification)
