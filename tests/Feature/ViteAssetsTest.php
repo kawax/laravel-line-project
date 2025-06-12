@@ -15,7 +15,7 @@ class ViteAssetsTest extends TestCase
     {
         $manifestPath = public_path('build/manifest.json');
         $this->assertFileExists($manifestPath);
-        
+
         $manifest = json_decode(file_get_contents($manifestPath), true);
         $this->assertIsArray($manifest);
         $this->assertArrayHasKey('resources/css/app.css', $manifest);
@@ -32,10 +32,10 @@ class ViteAssetsTest extends TestCase
         // Check that the manifest files exist
         $cssFiles = glob(public_path('build/assets/app-*.css'));
         $jsFiles = glob(public_path('build/assets/app-*.js'));
-        
+
         $this->assertNotEmpty($cssFiles, 'CSS build file should exist');
         $this->assertNotEmpty($jsFiles, 'JS build file should exist');
-        
+
         // Check that files are not empty
         $this->assertGreaterThan(0, filesize($cssFiles[0]), 'CSS file should not be empty');
         $this->assertGreaterThan(0, filesize($jsFiles[0]), 'JS file should not be empty');
