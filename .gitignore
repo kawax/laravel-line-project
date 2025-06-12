@@ -10,3 +10,7 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+
+# IDE Helper files
+_ide_helper.php
+.phpstorm.meta.php

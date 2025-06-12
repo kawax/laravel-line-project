@@ -12,7 +12,7 @@ use Tests\TestCase;
 
 class LineTest extends TestCase
 {
-    public function testTextMessageListener()
+    public function test_text_message_listener()
     {
         $event = m::mock(MessageEvent::class);
         $event->shouldReceive('getReplyToken')
@@ -27,11 +27,11 @@ class LineTest extends TestCase
         Bot::shouldReceive('reply->text')
             ->once();
 
-        $listener = new MessageListener();
+        $listener = new MessageListener;
         $listener->handle($event);
     }
 
-    public function testStickerMessageListener()
+    public function test_sticker_message_listener()
     {
         $event = m::mock(MessageEvent::class);
         $event->shouldReceive('getReplyToken')
@@ -47,7 +47,7 @@ class LineTest extends TestCase
         Bot::shouldReceive('reply->sticker')
             ->once();
 
-        $listener = new MessageListener();
+        $listener = new MessageListener;
         $listener->handle($event);
     }
 }
