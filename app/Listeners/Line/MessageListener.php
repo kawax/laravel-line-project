@@ -27,8 +27,6 @@ class MessageListener
     /**
      * Handle the event.
      *
-     * @param  MessageEvent  $event
-     * @return void
      *
      * @throws ApiException
      */
