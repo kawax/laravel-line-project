@@ -26,7 +26,7 @@ class LoginController extends Controller
                 'user_agent' => $request->userAgent(),
             ]);
 
-            return redirect()->route('login')->with('error', 'Authorization failed. Please try logging in again.');
+            return redirect()->route('welcome')->with('error', 'Authorization failed. Please try logging in again.');
         }
 
         /**
