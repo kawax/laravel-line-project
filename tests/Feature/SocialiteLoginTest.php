@@ -139,7 +139,7 @@ class SocialiteLoginTest extends TestCase
     {
         $response = $this->get('/callback');
 
-        $response->assertRedirect('/login');
+        $response->assertRedirect('/');
         $response->assertSessionHas('error', 'Authorization failed. Please try logging in again.');
     }
 
